@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const LoginBtn = styled.button`
-  background: ${(props) => props.theme.color.lightBlack};
+// Base button style
+const BaseButton = styled.button`
   padding: 0.375rem 0.75rem;
   color: white;
   border: 1px solid transparent;
@@ -12,22 +12,27 @@ export const LoginBtn = styled.button`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+`;
+
+// Login button
+export const LoginBtn = styled(BaseButton)`
+  background: ${(props) => props.theme.color.lightBlack};
   :hover {
-    border: 1px solid ${(props) => props.theme.color.lightBlack};
+    border-color: ${(props) => props.theme.color.lightBlack};
     background: transparent;
     color: black;
   }
 `;
 
+// Model button
 export const ModelBtn = styled(LoginBtn)`
-  background: ${(props) => props.theme.color.lightBlack};
   :hover {
-    border: 1px solid ${(props) => props.theme.color.lightBlack};
     background: white;
-    color: #000000;
+    color: #000;
   }
 `;
 
+// Model loading button
 export const ModelLoadingBtn = styled(ModelBtn)`
   background: ${(props) => props.theme.color.black};
   width: 100%;
@@ -37,45 +42,43 @@ export const ModelLoadingBtn = styled(ModelBtn)`
   }
 `;
 
+// Hero button
 export const HeroBtn = styled(LoginBtn)`
   background: #fdfdfd;
   color: ${(props) => props.theme.color.black};
   border-radius: 49px;
   :hover {
     background: ${(props) => props.theme.color.black};
-    color: white;
-    border: 1px solid transparent;
+    border-color: transparent;
   }
 `;
 
+// Book Button
 export const BookBtn = styled(LoginBtn)`
   background: ${(props) => props.theme.color.black};
-  color: white;
   width: 160px;
   font-size: 20px;
   border-radius: 49px;
   :hover {
-    border: 1px solid ${(props) => props.theme.color.black};
     background: #ffffff;
     color: ${(props) => props.theme.color.black};
   }
 `;
 
+// Delete button
 export const DeletingBtn = styled(LoginBtn)`
   background: ${(props) => props.theme.color.red};
-  color: white;
   width: 100%;
   :hover {
-    border: 1px solid ${(props) => props.theme.color.red};
     background: white;
     color: ${(props) => props.theme.color.red};
   }
 `;
 
+// Update button
 export const UpdateBtn = styled(LoginBtn)`
   background: ${(props) => props.theme.color.black};
   :hover {
-    border: 1px solid ${(props) => props.theme.color.black};
     color: ${(props) => props.theme.color.black};
   }
 `;
