@@ -6,7 +6,7 @@ html {
   --color-lightBlack: #0D0D0D;
   --color-lightGreen: #847146;
   --color-lightBrown: #73553C;
-  --color-orange: BF754B;
+  --color-orange: #BF754B;
 
 }
 
