@@ -13,10 +13,10 @@ import HomePage from "./pages/home";
 import SignUpPage from "./pages/signUp";
 import LoginPage from "./pages/logIn/Index";
 import VenuesPage from "./pages/venues/Index";
-import SpecificVenue from "./pages/specificVenue/Index";
+import SpecificVenue from "./pages/specificVenue/Index.jsx";
 import ProfilePage from "./pages/profile";
 import ErrorPage from "./pages/notFoundPage/Index";
-import HostSpecificVenue from "./pages/venueCreatedByHost/Index";
+import HostSpecificVenue from "./pages/venueCreatedByHost/Index.jsx";
 
 // Layout
 
