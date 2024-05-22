@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
-import { VENUES_URL } from "../../constants/Index.jsx";
+import { VENUES_URL } from "../../constants/index.jsx";
 
 export function useSpecificVenue(id) {
   const url = useMemo(

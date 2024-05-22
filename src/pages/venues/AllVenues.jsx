@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ApiHook from "../../hooks/ApiHook";
-import { VENUES_URL } from "../../constants/Index";
+import { VENUES_URL } from "../../constants/index.jsx";
 import Card from "../../components/cards/Card";
 import SearchVenues from "../../components/search/Search.jsx";
 import LoadingIndicator from "../../components/ui/LoadingInd.jsx";

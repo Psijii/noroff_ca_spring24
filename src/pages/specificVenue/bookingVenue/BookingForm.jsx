@@ -7,7 +7,7 @@ import { createBooking } from "./createBookingApiCall";
 import { useParams, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import useSpecificVenue from "../../../hooks/useSpecificVenue/Index";
+import useSpecificVenue from "../../../hooks/useSpecificVenue";
 
 import { format, addDays, isBefore } from "date-fns";
 

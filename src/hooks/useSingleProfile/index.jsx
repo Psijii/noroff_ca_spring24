@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import { authFetch } from "../../helper/authorization";
-import { PROFILE_URL } from "../../constants/Index.jsx";
+import { PROFILE_URL } from "../../constants/index.jsx";
 
 export function useSingleProfile(name) {
   const url = useMemo(() => {

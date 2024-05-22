@@ -1,4 +1,4 @@
-import { BASE_URL } from "../../../constants/Index";
+import { BASE_URL } from "../../../constants";
 import { authFetch } from "../../../helper/authorization";
 
 export async function createBooking(formData) {

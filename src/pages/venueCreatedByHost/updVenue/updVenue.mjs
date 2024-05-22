@@ -1,4 +1,4 @@
-import { VENUES_URL } from "../../../constants/Index";
+import { VENUES_URL } from "../../../constants";
 import { authFetch } from "../../../helper/authorization";
 
 export async function updateVenue(formData, id) {

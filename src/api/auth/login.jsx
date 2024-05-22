@@ -1,4 +1,4 @@
-import { LOGIN_URL } from "../../constants/Index.jsx";
+import { LOGIN_URL } from "../../constants/index.jsx";
 import { useAuth } from "../../context/utils.mjs";
 
 const method = "post";

@@ -13,9 +13,9 @@ import HomePage from "./pages/home/index";
 import SignUpPage from "./pages/signUp/index";
 import LoginPage from "./pages/logIn/index";
 import VenuesPage from "./pages/venues/index";
-import SpecificVenue from "./pages/specificVenue/index.jsx";
+import SpecificVenue from "./pages/specificVenue/index";
 import ErrorPage from "./pages/notFoundPage/index";
-import HostSpecificVenue from "./pages/venueCreatedByHost/index.jsx";
+import HostSpecificVenue from "./pages/venueCreatedByHost/index";
 import ProfilePage from "./pages/profile/index";
 
 
