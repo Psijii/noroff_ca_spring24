@@ -1,5 +1,5 @@
 import VenueCardCreatedByHost from "../usersVenue/Index.jsx";
-import { useVenues } from "../../../context/useVenues";
+import { useVenues } from "../../../context/useVenues.jsx";
 
 export default function UserVenues() {
   const { venues } = useVenues();

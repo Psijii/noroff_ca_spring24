@@ -2,7 +2,6 @@
 
 import { FaMapMarkerAlt, FaCalendar, FaMoneyBill } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
-import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import NoImage from "/src/assets/images/no-image.jpg";
 
