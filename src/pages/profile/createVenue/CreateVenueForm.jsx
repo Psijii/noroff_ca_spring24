@@ -48,6 +48,10 @@ const validationSchema = Yup.object().shape({
       .min(4, "Must be four (4) characters or more.")
       .max(40, "Cannot be longer than forty(40) characters")
       .required("Required"),
+      continent: Yup.string()
+      .min(4, "Must be four (4) characters or more.")
+      .max(40, "Cannot be longer than forty (40) characters")
+      .required("Required"),
   }),
 });
 
@@ -76,6 +80,7 @@ const CreateVenueForm = () => {
         city: "",
         zip: "",
         country: "",
+        continent: "",
       },
       meta: {
         wifi: false,
@@ -98,6 +103,7 @@ const CreateVenueForm = () => {
           city: values.location.city,
           zip: values.location.zip,
           country: values.location.country,
+          continent: values.location.continent,
         },
         meta: {
           wifi: values.meta.wifi,
@@ -110,7 +116,7 @@ const CreateVenueForm = () => {
         const response = await createVenue(formData);
 
         if (response) {
-          toast.success("Venue successfulyl created.", {
+          toast.success("Venue successfully created.", {
             position: "bottom-center",
             autoClose: 5000,
           });
@@ -336,6 +342,9 @@ const CreateVenueForm = () => {
               ) : null}
             </div>
           </div>
+         
+          
+                  
           <div>
             <label
               htmlFor="maxGuests"
@@ -360,10 +369,36 @@ const CreateVenueForm = () => {
               ) : null}
             </div>
           </div>
+          <div>
+            <label
+              htmlFor="continent"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              Continent
+            </label>
+            <div className="mt-2">
+              <input
+                className="block w-full rounded-md border border-gray-300 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                id="continent"
+                name="location.continent"
+                type="text"
+                autoComplete="off"
+                required
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.location.continent}
+              />
+              {touched.location?.continent && errors.location?.continent ? (
+                <div className="text-red-500 text-sm">
+                  {errors.location.continent}
+                </div>
+              ) : null}
+            </div>
+          </div>
           {/* media start */}
           <div className="py-3 ">
             <div>
-              <div className="py-3 flex flex-col justify-center flex-wrap text-white">
+              <div className="py-3 flex flex-col justify-center flex-wrap text-primary">
                 <label
                   htmlFor="media"
                   className="block uppercase tracking-wide text-xs font-bold mb-2"

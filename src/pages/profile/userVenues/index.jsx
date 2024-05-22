@@ -1,4 +1,4 @@
-import VenueCardCreatedByHost from "../usersVenue/Index.jsx";
+import VenueCardCreatedByHost from "../usersVenue/Index";
 import { useVenues } from "../../../context/useVenues.jsx";
 
 export default function UserVenues() {
