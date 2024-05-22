@@ -9,8 +9,8 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
 
-import HomePage from "./pages/home/Index.jsx";
-import SignUpPage from "./pages/signUp/Index.jsx";
+import HomePage from "./pages/home/Index";
+import SignUpPage from "./pages/signUp/Index";
 import LoginPage from "./pages/logIn/Index";
 import VenuesPage from "./pages/venues/Index";
 import SpecificVenue from "./pages/specificVenue/Index.jsx";
