@@ -17,14 +17,14 @@ const SearchVenues = ({ onSearch }) => {
   };
 
   return (
-    <div className="container max-w-4xl mx-auto mt-20">
+    <div className="container max-w-7xl mx-auto mt-10">
       <div className="max-w-md rounded overflow-hidden mx-auto p-1 font-pins text-fontcolor">
         <div className="flex flex-col items-center sm:flex-row sm:items-center w-full max-w-lg pb-3 pt-3 px-6 bg-quaternary last:rounded-sm text-primary-darker mb-10">
           <h1 className="text-xl font-bold text-white text-center sm:text-left sm:mr-4 mb-4 sm:mb-0">
             Find your accommodation
           </h1>
           <form
-            className="flex items-center border-2 border-gray-300 bg-white rounded-sm py-2 px-2 w-full"
+            className="flex items-center border-2 bg-white rounded-sm py-2 px-2 w-full"
             onSubmit={(e) => e.preventDefault()}
           >
             <label htmlFor="search" className="sr-only">
