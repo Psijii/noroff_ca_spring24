@@ -1,6 +1,6 @@
 import useSingleProfile from "../../hooks/useSingleProfile";
 import retrieveProfileName from "../../helper/retrieveProfileName";
-import DisplayProfile from "./displayUserProfile";
+import DisplayProfile from "./displayUserProfile/Index.jsx";
 import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
 import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 

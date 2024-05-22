@@ -8,10 +8,16 @@ body {
   background-color: #5F4828;
 }
 
+.container {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   row-gap: 40px;
+  background-color: #f3f3f3;
 }
 
 @media (min-width: 768px) {

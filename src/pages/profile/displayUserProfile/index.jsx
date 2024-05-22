@@ -24,7 +24,7 @@
 import PropTypes from "prop-types";
 import AvatarModal from "../avatar/AvatarModal";
 import { useState } from "react";
-import BookingVenueCard from "../userBookings";
+import BookingVenueCard from "../userBookings/Index";
 import UserVenues from "../userVenues";
 import CreateVenueForm from "../createVenue/CreateVenueForm";
 import noAvatarImage from "/src/assets/images/no-avatar.png";

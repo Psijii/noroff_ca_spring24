@@ -1,6 +1,6 @@
 /*eslint-disable react/prop-types*/
 
-import { FaMapMarkerAlt, FaCalendar } from "react-icons/fa";
+import { FaMapMarkerAlt, FaCalendar, FaMoneyBill } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -44,7 +44,7 @@ function VenueCardCreatedByHost({ userVenue }) {
           <BsPeopleFill /> {maxGuests}
         </div>
         <div className="flex items-center gap-4 text-sm mb-2 text-gray-600">
-          <RiMoneyPoundCircleFill />
+          <FaMoneyBill />
           {price}
         </div>
         <div className="flex items-center gap-4 text-sm mb-2 text-gray-600">

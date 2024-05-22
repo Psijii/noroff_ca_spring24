@@ -206,7 +206,7 @@ const BookingForm = ({ price, maxGuests }) => {
         </div>
         <div className="mb-4">
           <p className="text-gray-700 font-bold">
-            Total amount: ${totalAmount}
+            Total amount: NOK {totalAmount}
           </p>
         </div>
         <div className="text-center">
