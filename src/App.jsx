@@ -12,11 +12,11 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home";
 import SignUpPage from "./pages/signUp";
 import LoginPage from "./pages/logIn/Index";
-import VenuesPage from "./pages/venues";
-import SpecificVenue from "./pages/specificVenue";
+import VenuesPage from "./pages/venues/Index";
+import SpecificVenue from "./pages/specificVenue/Index";
 import ProfilePage from "./pages/profile";
 import ErrorPage from "./pages/notFoundPage/Index";
-import HostSpecificVenue from "./pages/venueCreatedByHost";
+import HostSpecificVenue from "./pages/venueCreatedByHost/Index";
 
 // Layout
 

@@ -3,7 +3,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
-import { updateVenue } from "./updateVenue.mjs";
+import { updateVenue } from "./updVenue.mjs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

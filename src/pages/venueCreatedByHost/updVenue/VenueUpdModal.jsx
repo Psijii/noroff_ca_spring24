@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UpdateVenueForm from "./UpdateVenueForm";
+import UpdateVenueForm from "./UpdVenueForm";
 
 //eslint-disable-next-line
 export default function VenueUpdateModal({ specificVenue }) {

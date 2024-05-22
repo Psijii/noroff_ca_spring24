@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useSpecificVenue } from "../../hooks/useSpecificVenue";
-import SpecificVenueCard from "./SpecificVenueCard";
+import { useSpecificVenue } from "../../hooks/useSpecificVenue/index.jsx";
+import SpecificVenueCard from "./SpecificVenueCard.jsx";
 import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
 import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 

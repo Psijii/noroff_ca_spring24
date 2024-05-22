@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import ApiHook from "../../hooks/ApiHook";
-import { VENUES_URL } from "../../constants/Index";
-import VenueDetails from "./VenueDetails";
+import ApiHook from "../../hooks/ApiHook.jsx";
+import { VENUES_URL } from "../../constants/Index.jsx";
+import VenueDetails from "./VenueDetails.jsx";
 import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
 import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 

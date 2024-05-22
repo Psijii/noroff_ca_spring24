@@ -4,11 +4,11 @@ import { FaWifi, FaUtensils, FaPaw, FaCar } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NoImage from "/src/assets/images/no-image.jpg";
-import VenueUpdateModal from "./updateVenue/VenueUpdateModal";
+import VenueUpdateModal from "./updVenue/VenueUpdModal";
 import Breadcrumb from "../../components/ui/Breadcrumb";
 import { useNavigate } from "react-router-dom";
 
-import { deleteVenue } from "./deleteVenue/DeleteVenueApiCall";
+import { deleteVenue } from "./delVenue/delVenueApiCall";
 
 const SpecificVenueCard = ({ specificVenue }) => {
   const navigate = useNavigate();
