@@ -9,13 +9,13 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
 
-import HomePage from "./pages/home/Index";
+import HomePage from "./pages/home/index";
 import SignUpPage from "./pages/signUp/Index";
 import LoginPage from "./pages/logIn/Index";
 import VenuesPage from "./pages/venues/Index";
-import SpecificVenue from "./pages/specificVenue/Index.jsx";
+import SpecificVenue from "./pages/specificVenue/index.jsx";
 import ErrorPage from "./pages/notFoundPage/Index";
-import HostSpecificVenue from "./pages/venueCreatedByHost/Index.jsx";
+import HostSpecificVenue from "./pages/venueCreatedByHost/index.jsx";
 import ProfilePage from "./pages/profile/Index";
 
 
