@@ -20,7 +20,7 @@ const validationSchema = Yup.object({
       "Please enter your noroff email address (e,g- name@stud.noroff.no)"
     ),
   password: Yup.string().required("Required"),
-  avatar: Yup.string().url("Invalid url"),
+  avatar: Yup.string().url("Invalid URL"),
   venueManager: Yup.boolean(),
 });
 

@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom";
 // Pages
 
 import HomePage from "./pages/home";
-import SignUpPage from "./pages/signUp";
+import SignUpPage from "./pages/signUp/Index.jsx";
 import LoginPage from "./pages/logIn/Index";
 import VenuesPage from "./pages/venues/Index";
 import SpecificVenue from "./pages/specificVenue/Index.jsx";

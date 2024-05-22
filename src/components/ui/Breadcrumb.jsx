@@ -4,20 +4,20 @@ import { BsSlashLg } from "react-icons/bs";
 
 const Breadcrumb = ({ paths }) => (
   <div className="mx-auto max-w-7xl md:px-12 mt-40 mb-10">
-    <nav aria-label="Breadcrumb for site navigation">
+    <nav aria-label="Site navigation">
       <ol className="mb-6 ml-8 flex flex-row">
         {paths.map((path, index) => (
           <li
             key={path.id}
-            className="flex items-center text-sm text-gray-800 underline"
+            className="flex items-center text-sm text-white underline"
           >
             {index < paths.length - 1 ? (
               <>
                 <Link to={path.path}>{path.name}</Link>
-                <BsSlashLg className="mx-2 text-gray-500" />
+                <BsSlashLg className="mx-2 text-white" />
               </>
             ) : (
-              <span className="text-gray-500">{path.name}</span>
+              <span className="text-white">{path.name}</span>
             )}
           </li>
         ))}
