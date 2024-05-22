@@ -1,10 +1,10 @@
 import { useState } from "react";
 import ApiHook from "../../hooks/ApiHook";
-import { VENUES_URL } from "../../constants";
+import { VENUES_URL } from "../../constants/Index";
 import Card from "../../components/cards/Card";
-import SearchVenues from "../../components/search/SearchVenues";
-import LoadingIndicator from "../../components/ui/LoadingIndicator";
-import ErrorMessage from "../../components/ui/ErrorMessage";
+import SearchVenues from "../../components/search/Search.jsx";
+import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
+import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 
 const venuesLimit = 90;
 const qs = `?sort=created&sortOrder=desc&&_owner=true&_bookings=true&limit=${venuesLimit}`;

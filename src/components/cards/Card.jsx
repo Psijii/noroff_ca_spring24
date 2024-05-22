@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import MediaComponent from "/src/components/ui/MediaComponent.jsx";
+import MediaComponent from "/src/components/ui/MediaComp.jsx";
 import MetaIcons from "/src/components/ui/MetaIcons.jsx";
 
 const Card = ({ venue }) => {

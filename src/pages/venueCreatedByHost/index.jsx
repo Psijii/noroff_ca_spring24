@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useSpecificVenue } from "../../hooks/useSpecificVenue";
 import SpecificVenueCard from "./SpecificVenueCard";
-import LoadingIndicator from "../../components/ui/LoadingIndicator";
-import ErrorMessage from "../../components/ui/ErrorMessage";
+import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
+import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 
 const HostSpecificVenue = () => {
   const { id } = useParams();

@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useLogin } from "../../api/auth/login.jsx";
-import LoadingIndicator from "../../components/ui/LoadingIndicator";
+import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
 
 const validationSchema = Yup.object({
   email: Yup.string()

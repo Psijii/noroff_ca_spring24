@@ -1,3 +1,11 @@
+
+
+/**
+ * The main component of the application.
+ * Renders the appropriate page based on the current URL path.
+ *
+ * @returns {JSX.Element} The rendered application.
+ */
 import { Route, Routes } from "react-router-dom";
 // Pages
 
@@ -12,7 +20,7 @@ import HostSpecificVenue from "./pages/venueCreatedByHost";
 
 // Layout
 
-import BaseLayout from "./components/layouts/BaseLayout";
+import BaseLayout from "./components/layouts/MainLayout";
 
 // Authentication
 

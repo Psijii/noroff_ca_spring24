@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { signUp } from "../../api/auth/signup.mjs";
-import LoadingIndicator from "../../components/ui/LoadingIndicator";
+import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
 
 const emailNoroffRegex = /^[A-Z0-9._%+-]+@stud.noroff\.no$/i;
 

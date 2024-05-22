@@ -1,8 +1,8 @@
 import useSingleProfile from "../../hooks/useSingleProfile";
 import retrieveProfileName from "../../helper/retrieveProfileName";
 import DisplayProfile from "./displayUserProfile";
-import LoadingIndicator from "../../components/ui/LoadingIndicator";
-import ErrorMessage from "../../components/ui/ErrorMessage";
+import LoadingIndicator from "../../components/ui/LoadingInd.jsx";
+import ErrorMessage from "../../components/ui/ErrorMsg.jsx";
 
 const ProfilePage = () => {
   const profileName = retrieveProfileName();
