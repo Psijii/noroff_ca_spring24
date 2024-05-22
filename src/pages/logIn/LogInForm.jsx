@@ -9,7 +9,7 @@ const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email format")
     .required("Please enter your email address"),
-  password: Yup.string().required("Please enter your password"),
+  password: Yup.string().required("Please enter your password."),
 });
 
 const LogInForm = () => {
@@ -51,7 +51,7 @@ const LogInForm = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-900"
+            className="block text-sm font-medium text-primary"
           >
             Email
           </label>
@@ -61,7 +61,7 @@ const LogInForm = () => {
             id="email"
             autoComplete="off"
             required
-            className="mt-2 w-full rounded-md border-gray-300 py-1.5 text-gray-900 shadow-sm focus:ring-indigo-600"
+            className="mt-2 w-full rounded-md bg-tertiary-lighter border-primary py-1.5 text-primary shadow-sm focus:ring-indigo-600"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -73,7 +73,7 @@ const LogInForm = () => {
         <div>
           <label
             htmlFor="password"
-            className="block text-sm font-medium text-gray-900"
+            className="block text-sm font-medium text-primary"
           >
             Password
           </label>
@@ -83,7 +83,7 @@ const LogInForm = () => {
             id="password"
             autoComplete="off"
             required
-            className="mt-2 w-full rounded-md border-gray-300 py-1.5 text-gray-900 shadow-sm focus:ring-indigo-600"
+            className="mt-2 w-full text-primary rounded-md bg-tertiary-lighter border-primary py-1.5 text-white shadow-sm focus:ring-indigo-600"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.password}
