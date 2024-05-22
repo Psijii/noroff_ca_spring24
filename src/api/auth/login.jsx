@@ -1,5 +1,5 @@
-import { LOGIN_URL } from "../../constants";
-import { useAuth } from "../../context/authUtils.js";
+import { LOGIN_URL } from "../../constants/Index.jsx";
+import { useAuth } from "../../context/utils.mjs";
 
 const method = "post";
 

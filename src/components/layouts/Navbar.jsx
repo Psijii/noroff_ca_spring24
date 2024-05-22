@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useAuth } from "../../context/authUtils.js";
+import { useAuth } from "../../context/utils.mjs";
 import { useNavigate } from "react-router-dom";
 import Logo from "./Logo.jsx";
 
