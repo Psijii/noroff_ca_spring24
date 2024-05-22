@@ -4,6 +4,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body {
+  background-color: #5F4828;
+}
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));

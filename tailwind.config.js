@@ -27,6 +27,11 @@ export default {
           darker: "#6a2e0f",
           lighter: "#a65d38",
         },
+        background: {
+          DEFAULT: "#5F4828",  
+          darker: "#453619",  
+          lighter: "#836B4A" 
+        },
       },
       fontFamily: {
         heading: ["Inter", "serif"],
