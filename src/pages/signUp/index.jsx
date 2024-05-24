@@ -1,3 +1,9 @@
+
+
+/**
+ * Represents the SignUpPage component.
+ * @returns {JSX.Element} The rendered SignUpPage component.
+ */
 import TextSignUp from "./SignUpText";
 import SignUpForm from "./SignUpForm";
 

@@ -1,3 +1,15 @@
+
+
+
+/**
+ * Represents a login form component.
+ *
+ * @component
+ * @example
+ * return (
+ *   <LogInForm />
+ * )
+ */
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";

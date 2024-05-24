@@ -1,3 +1,11 @@
+
+
+
+/**
+ * Renders the hero banner component.
+ * 
+ * @returns {JSX.Element} The rendered hero banner component.
+ */
 import { NavLink } from "react-router-dom";
 import heroImage from "/src/assets/images/hero-image.jpg";
 
