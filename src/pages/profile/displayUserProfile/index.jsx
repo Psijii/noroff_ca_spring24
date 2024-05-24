@@ -61,7 +61,7 @@ const DisplayProfile = ({ profile }) => {
             <h1 className="text-2xl font-bold">{name}</h1>
             <div>
               <p className="font-customFont text-lg">{email}</p>
-              <p>Account Type: {venueManager ? "Venue Manager" : "Guest"}</p>
+              <p>Account status: {venueManager ? "Venue Manager" : "Guest"}</p>
             </div>
             <AvatarModal />
           </div>
@@ -80,7 +80,7 @@ const DisplayProfile = ({ profile }) => {
               onClick={() => setActiveTab("bookings")}
             >
               <h4 className="text-2xl font-semibold text-center">
-                Your bookings
+                Your booking(s)
               </h4>
             </div>
             <div
@@ -92,7 +92,7 @@ const DisplayProfile = ({ profile }) => {
               onClick={() => setActiveTab("venues")}
             >
               <h4 className="text-2xl font-semibold text-center">
-                Your venues
+                Your venue(s)
               </h4>
             </div>
             <div
@@ -119,7 +119,7 @@ const DisplayProfile = ({ profile }) => {
               onClick={() => setActiveTab("bookings")}
             >
               <h3 className="text-xl font-customFont text-center">
-                Your Upcoming Bookings
+                Your upcoming booking(s)
               </h3>
             </div>
           </div>

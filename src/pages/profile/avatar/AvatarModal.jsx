@@ -1,29 +1,25 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import needed to navigate
 import { updateAvatar } from "./updateAvatar.mjs";
+import { ToastContainer, toast } from "react-toastify"; // For better user notifications
+import "react-toastify/dist/ReactToastify.css";
 
-/**
- * Component for the Avatar Modal.
- * Allows the user to update their avatar by providing a new URL.
- */
 export default function AvatarModal() {
   const [showModal, setShowModal] = useState(false);
   const [avatarUrl, setAvatarUrl] = useState("");
 
-  /**
-   * Handles the update of the avatar.
-   * Calls the updateAvatar function to update the avatar URL.
-   * Displays success or error messages accordingly.
-   */
-  const handleUpdadteAvatar = async () => {
+  const navigate = useNavigate(); // Create an instance of navigate
+
+  const handleUpdateAvatar = async () => {
     try {
       const newUrl = await updateAvatar(avatarUrl);
       console.log("new url", newUrl);
-      alert("Avatar updated successfully");
+      toast.success("Avatar updated successfully");
       setShowModal(false);
-      window.location.reload();
+      navigate("/profile");  // Navigate to profile page
     } catch (error) {
       console.log(error);
-      alert("Something went wrong, please try again");
+      toast.error("Something went wrong, please try again");
     }
   };
 
@@ -37,7 +33,7 @@ export default function AvatarModal() {
         Update Avatar
       </button>
 
-      {showModal ? (
+      {showModal && (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -49,15 +45,11 @@ export default function AvatarModal() {
                 </div>
                 {/* body */}
                 <div className="relative p-6 flex-auto">
-                  <div className="mb-3 pt-0">
-                    <div className="mb-3 pt-0">
-                      <input
-                        placeholder="Enter avatar URL"
-                        className="px-3 py-4 placeholder-slate-300 text-slate-600 relative bg-white rounded-sm text-base border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                        onChange={(e) => setAvatarUrl(e.target.value)}
-                      />
-                    </div>
-                  </div>
+                  <input
+                    placeholder="Enter avatar URL"
+                    className="px-3 py-4 placeholder-slate-300 text-slate-600 relative bg-white rounded-sm text-base border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                    onChange={(e) => setAvatarUrl(e.target.value)}
+                  />
                 </div>
                 {/* footer */}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
@@ -71,7 +63,7 @@ export default function AvatarModal() {
                   <button
                     className="bg-primary text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={handleUpdadteAvatar}
+                    onClick={handleUpdateAvatar}
                   >
                     Update
                   </button>
@@ -81,7 +73,9 @@ export default function AvatarModal() {
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
-      ) : null}
+      )}
+
+      <ToastContainer />
     </>
   );
 }

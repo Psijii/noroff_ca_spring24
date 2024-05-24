@@ -1,4 +1,9 @@
 
+/**
+ * Saves data to the local storage.
+ * @param {string} key - The key to store the data under.
+ * @param {any} value - The value to be stored.
+ */
 export function save(key, value) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
@@ -7,6 +12,11 @@ export function save(key, value) {
   }
 }
 
+/**
+ * Loads data from the local storage.
+ * @param {string} key - The key to retrieve the data from.
+ * @returns {any} The retrieved data, or null if the key does not exist.
+ */
 export function load(key) {
   try {
     const value = localStorage.getItem(key);
@@ -17,6 +27,10 @@ export function load(key) {
   }
 }
 
+/**
+ * Removes data from the local storage.
+ * @param {string} key - The key of the data to be removed.
+ */
 export function remove(key) {
   try {
     localStorage.removeItem(key);
@@ -25,6 +39,9 @@ export function remove(key) {
   }
 }
 
+/**
+ * Clears all data from the local storage.
+ */
 export function clear() {
   localStorage.clear;
 }
