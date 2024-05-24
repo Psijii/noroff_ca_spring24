@@ -5,16 +5,13 @@
 @import "tailwindcss/utilities";
 
 body {
-  background-color: #5F4828;
+  background-color: #5f4828;
 }
 
 .container {
   background-color: #f3f3f3;
   border-radius: 5px;
 }
-
-
-
 
 .cardContainer {
   display: grid;

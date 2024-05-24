@@ -1,5 +1,3 @@
-
-
 /**
  * The main component of the application.
  * Renders the appropriate page based on the current URL path.
