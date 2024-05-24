@@ -22,7 +22,7 @@ This may be a Netlify error.
 ## Installation
 Instructions on how to install and set up your own copy of the project. This might include software prerequisites, environment setup, and dependency installation.
 ```
-git clone https://yourprojectrepository.com 
+git clone https://github.com/Psijii/noroff_ca_spring24
 npm install
 ```
 
@@ -38,8 +38,6 @@ npm run dev
 npm run build
 npm run preview
 ```
-
-
 
 Navigate to `http://localhost:3000` to interact with the application.
 OR click on the local hosts links in Terminal.
