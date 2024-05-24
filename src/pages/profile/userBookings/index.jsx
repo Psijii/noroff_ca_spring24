@@ -1,3 +1,22 @@
+
+
+
+/**
+ * Renders a card component for a booking venue.
+ *
+ * @component
+ * @param {Object} booking - The booking object.
+ * @param {number} booking.guests - The number of guests for the booking.
+ * @param {string} booking.dateFrom - The check-in date for the booking.
+ * @param {string} booking.dateTo - The check-out date for the booking.
+ * @param {Object} booking.venue - The venue object for the booking.
+ * @param {string} booking.venue.name - The name of the venue.
+ * @param {Object} booking.venue.location - The location object of the venue.
+ * @param {string} booking.venue.location.city - The city of the venue location.
+ * @param {string} booking.venue.location.country - The country of the venue location.
+ * @param {Array} booking.venue.media - The media array of the venue (images, videos, etc.).
+ * @returns {JSX.Element} The BookingVenueCard component.
+ */
 /* eslint-disable react/prop-types */
 import NoImage from "/src/assets/images/no-image.jpg";
 

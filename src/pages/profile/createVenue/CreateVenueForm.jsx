@@ -1,3 +1,11 @@
+
+
+
+/**
+ * @file CreateVenueForm.jsx
+ * @description A form component for creating a venue.
+ * @module pages/profile/createVenue/CreateVenueForm
+ */
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
