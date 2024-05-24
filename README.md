@@ -5,6 +5,7 @@ whereas the admins can manage their venues and bookings.
 Created by Siw Elin Årolilja Iversen/@Psijii at GitHub.
 
 ## Table of Contents
+- [Known bugs](#known-bugs)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Components](#components)
@@ -13,6 +14,10 @@ Created by Siw Elin Årolilja Iversen/@Psijii at GitHub.
 - [Error Handling](#error-handling)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Known bugs
+There are issues with the profile page showing up as a 404 on Netlify. 
+This may be a Netlify error.
 
 ## Installation
 Instructions on how to install and set up your own copy of the project. This might include software prerequisites, environment setup, and dependency installation.
