@@ -1,3 +1,14 @@
+
+
+/**
+ * Breadcrumb component displays a breadcrumb navigation for a website.
+ *
+ * @param {Object[]} paths - An array of path objects.
+ * @param {string|number} paths[].id - The unique identifier for the path.
+ * @param {string} paths[].name - The name of the path.
+ * @param {string} [paths[].path] - The URL path for the link.
+ * @returns {JSX.Element} The rendered Breadcrumb component.
+ */
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { BsSlashLg } from "react-icons/bs";

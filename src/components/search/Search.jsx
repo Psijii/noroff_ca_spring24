@@ -1,16 +1,34 @@
+
+
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { BsSearch, BsXCircleFill } from "react-icons/bs";
 
+/**
+ * SearchVenues component for searching venues.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Function} props.onSearch - The function to be called when searching.
+ * @returns {JSX.Element} - The rendered component.
+ */
 const SearchVenues = ({ onSearch }) => {
   const [search, setSearch] = useState("");
 
+  /**
+   * Handles the search input change.
+   *
+   * @param {Object} e - The event object.
+   */
   const handleSearch = (e) => {
     const searchTerm = e.target.value;
     setSearch(searchTerm);
     onSearch(searchTerm);
   };
 
+  /**
+   * Handles clearing the search input.
+   */
   const handleClearSearch = () => {
     setSearch("");
     onSearch("");

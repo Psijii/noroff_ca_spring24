@@ -1,3 +1,13 @@
+
+
+
+/**
+ * Sends a sign-up request to the server.
+ *
+ * @param {Object} formData - The form data containing the user's sign-up information.
+ * @returns {Promise<Object>} - A promise that resolves to the response data from the server.
+ * @throws {Error} - If an error occurs during the sign-up process.
+ */
 import { REGISTER_URL } from "../../constants";
 
 export async function signUp(formData) {

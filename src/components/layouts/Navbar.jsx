@@ -1,3 +1,11 @@
+
+
+
+/**
+ * Navbar component for the application.
+ *
+ * @returns {JSX.Element} The rendered Navbar component.
+ */
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
