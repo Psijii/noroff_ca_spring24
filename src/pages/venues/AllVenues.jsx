@@ -1,3 +1,9 @@
+
+/**
+ * Renders a page displaying all venues and allows searching for venues.
+ *
+ * @returns {JSX.Element} The AllVenues component.
+ */
 import { useState } from "react";
 import ApiHook from "../../hooks/ApiHook";
 import { VENUES_URL } from "../../constants/index.jsx";

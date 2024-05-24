@@ -1,3 +1,11 @@
+
+
+/**
+ * Renders a modal for updating a venue.
+ * @param {Object} props - The component props.
+ * @param {Object} props.specificVenue - The specific venue to be updated.
+ * @returns {JSX.Element} - The rendered modal component.
+ */
 import { useState } from "react";
 import UpdateVenueForm from "./UpdVenueForm";
 

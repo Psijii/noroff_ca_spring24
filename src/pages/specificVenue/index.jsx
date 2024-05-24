@@ -1,3 +1,10 @@
+
+
+/**
+ * Renders the details of a specific venue.
+ * @module SpecificVenue
+ * @returns {JSX.Element} The rendered SpecificVenue component
+ */
 import { useParams } from "react-router-dom";
 import ApiHook from "../../hooks/ApiHook.jsx";
 import { VENUES_URL } from "../../constants/index.jsx";

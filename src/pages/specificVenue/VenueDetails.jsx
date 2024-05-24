@@ -1,3 +1,32 @@
+
+/**
+ * Renders the details of a specific venue.
+ *
+ * @component
+ * @param {Object} venue - The venue object containing the details of the venue.
+ * @param {string} venue.id - The unique identifier of the venue.
+ * @param {string} venue.description - The description of the venue.
+ * @param {number} venue.maxGuests - The maximum number of guests allowed in the venue.
+ * @param {string} venue.name - The name of the venue.
+ * @param {string[]} venue.media - The array of media URLs associated with the venue.
+ * @param {number} venue.price - The price of the venue per night.
+ * @param {Object} venue.location - The location details of the venue.
+ * @param {string} venue.location.address - The address of the venue.
+ * @param {string} venue.location.city - The city of the venue.
+ * @param {string} venue.location.country - The country of the venue.
+ * @param {string} venue.location.continent - The continent of the venue.
+ * @param {Object} venue.meta - The meta information of the venue.
+ * @param {boolean} venue.meta.breakfast - Indicates if breakfast is available at the venue.
+ * @param {boolean} venue.meta.wifi - Indicates if Wi-Fi is available at the venue.
+ * @param {boolean} venue.meta.pets - Indicates if pets are allowed at the venue.
+ * @param {boolean} venue.meta.parking - Indicates if parking is available at the venue.
+ * @param {Object} venue.owner - The owner details of the venue.
+ * @param {string} venue.owner.avatar - The avatar URL of the owner.
+ * @param {string} venue.owner.name - The name of the owner.
+ * @param {string} venue.owner.email - The email of the owner.
+ * @param {Object[]} venue.bookings - The array of bookings associated with the venue.
+ * @returns {JSX.Element} The JSX element representing the details of the venue.
+ */
 /*eslint-disable */
 import { useState, useEffect } from "react";
 import { FaWifi, FaUtensils, FaPaw, FaCar } from "react-icons/fa";

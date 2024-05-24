@@ -1,3 +1,15 @@
+
+
+
+/**
+ * A form component for booking a specific venue.
+ *
+ * @component
+ * @example
+ * return (
+ *   <BookingForm price={100} maxGuests={5} />
+ * )
+ */
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";

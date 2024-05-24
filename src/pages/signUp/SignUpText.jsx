@@ -1,3 +1,9 @@
+
+
+/**
+ * Component for displaying a sign-up text with an image and a call-to-action button.
+ * @component
+ */
 import { NavLink } from "react-router-dom";
 import CardImage from "/src/assets/images/card-image.jpg";
 

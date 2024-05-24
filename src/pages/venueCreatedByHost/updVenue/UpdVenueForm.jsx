@@ -1,3 +1,14 @@
+
+
+
+/**
+ * This component represents a form for updating a venue.
+ *
+ * @component
+ * @param {Object} specificVenue - The specific venue object to be updated.
+ * @param {Function} closeModal - A function to close the modal.
+ * @returns {JSX.Element} The UpdateVenueForm component.
+ */
 /*eslint-disable*/
 
 import { useFormik } from "formik";

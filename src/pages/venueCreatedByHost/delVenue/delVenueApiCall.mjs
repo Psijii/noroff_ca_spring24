@@ -1,3 +1,11 @@
+
+
+/**
+ * Deletes a venue by its ID.
+ * @param {string} id - The ID of the venue to delete.
+ * @returns {Promise<Response>} - A promise that resolves to the response of the delete request.
+ * @throws {Error} - If an error occurs during the delete request.
+ */
 import { VENUES_URL } from "../../../constants";
 import { authFetch } from "../../../helper/authorization";
 

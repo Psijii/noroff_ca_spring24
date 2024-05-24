@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
     .email("Invalid email format")
     .matches(emailNoroffRegex, "name@stud.noroff.no")
     .required(
-      "Please enter your noroff email address (e,g- name@stud.noroff.no)"
+      "Please enter your stud.noroff.no e-mail address (ex. name@stud.noroff.no)"
     ),
   password: Yup.string().required("Required"),
   avatar: Yup.string().url("Invalid URL"),

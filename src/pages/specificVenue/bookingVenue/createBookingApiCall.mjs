@@ -1,3 +1,11 @@
+
+
+/**
+ * Creates a booking by sending a POST request to the server.
+ * @param {Object} formData - The data for the booking.
+ * @returns {Promise<Object>} - A promise that resolves to the created booking data.
+ * @throws {Error} - If there is an error creating the booking.
+ */
 import { BASE_URL } from "../../../constants";
 import { authFetch } from "../../../helper/authorization";
 

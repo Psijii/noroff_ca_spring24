@@ -1,3 +1,30 @@
+/**
+ * Renders a specific venue card with details and booking information.
+ *
+ * @component
+ * @param {Object} specificVenue - The specific venue object.
+ * @param {string} specificVenue.id - The ID of the venue.
+ * @param {string} specificVenue.description - The description of the venue.
+ * @param {string} specificVenue.name - The name of the venue.
+ * @param {string[]} specificVenue.media - The media URLs of the venue.
+ * @param {number} specificVenue.price - The price of the venue.
+ * @param {Object} specificVenue.location - The location details of the venue.
+ * @param {string} specificVenue.location.address - The address of the venue.
+ * @param {string} specificVenue.location.city - The city of the venue.
+ * @param {string} specificVenue.location.country - The country of the venue.
+ * @param {Object} specificVenue.meta - The meta information of the venue.
+ * @param {boolean} specificVenue.meta.breakfast - Indicates if breakfast is available.
+ * @param {boolean} specificVenue.meta.wifi - Indicates if Wi-Fi is available.
+ * @param {boolean} specificVenue.meta.pets - Indicates if pets are allowed.
+ * @param {boolean} specificVenue.meta.parking - Indicates if parking is available.
+ * @param {string} specificVenue.owner - The owner of the venue.
+ * @param {number} specificVenue.rating - The rating of the venue.
+ * @param {Object[]} specificVenue.bookings - The bookings for the venue.
+ * @param {string} specificVenue.bookings.dateFrom - The check-in date of the booking.
+ * @param {string} specificVenue.bookings.dateTo - The check-out date of the booking.
+ * @param {number} specificVenue.maxGuests - The maximum number of guests allowed.
+ * @returns {JSX.Element} The rendered specific venue card component.
+ */
 /*eslint-disable */
 
 import { FaWifi, FaUtensils, FaPaw, FaCar } from "react-icons/fa";

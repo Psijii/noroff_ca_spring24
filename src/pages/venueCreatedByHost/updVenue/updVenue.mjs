@@ -1,3 +1,12 @@
+
+
+/**
+ * Updates a venue with the provided form data.
+ * @param {Object} formData - The form data to update the venue with.
+ * @param {string} id - The ID of the venue to update.
+ * @returns {Promise<Object>} - A promise that resolves to the updated venue object.
+ * @throws {Error} - If an error occurs during the update process.
+ */
 import { VENUES_URL } from "../../../constants";
 import { authFetch } from "../../../helper/authorization";
 
