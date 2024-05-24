@@ -1,3 +1,9 @@
+
+
+/**
+ * Retrieves the profile name from the stored profile data.
+ * @returns {string} The profile name.
+ */
 import { load } from "../../storage/index.mjs";
 
 export const retrieveProfileName = () => {

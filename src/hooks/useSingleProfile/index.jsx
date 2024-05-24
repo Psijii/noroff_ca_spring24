@@ -1,6 +1,4 @@
 
-
-
 import { useEffect, useState, useMemo } from "react";
 import { authFetch } from "../../helper/authorization";
 import { PROFILE_URL } from "../../constants/index.jsx";

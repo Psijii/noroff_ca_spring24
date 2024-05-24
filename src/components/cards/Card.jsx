@@ -1,3 +1,25 @@
+
+
+/**
+ * Card component represents a card displaying information about a venue.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.venue - The venue object containing information about the venue.
+ * @param {string} props.venue.id - The unique identifier of the venue.
+ * @param {string} props.venue.name - The name of the venue.
+ * @param {number} props.venue.price - The price of the venue per night.
+ * @param {Object} props.venue.location - The location object containing address, city, and country information.
+ * @param {string} props.venue.location.address - The address of the venue.
+ * @param {string} props.venue.location.city - The city of the venue.
+ * @param {string} props.venue.location.country - The country of the venue.
+ * @param {string[]} props.venue.media - An array of media URLs associated with the venue.
+ * @param {Object} props.venue.meta - The meta object containing information about the venue (e.g., wifi, parking, breakfast, pets).
+ * @param {boolean} props.venue.meta.wifi - Indicates if wifi is available at the venue.
+ * @param {boolean} props.venue.meta.parking - Indicates if parking is available at the venue.
+ * @param {boolean} props.venue.meta.breakfast - Indicates if breakfast is available at the venue.
+ * @param {boolean} props.venue.meta.pets - Indicates if pets are allowed at the venue.
+ * @returns {JSX.Element} The rendered Card component.
+ */
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import MediaComponent from "/src/components/ui/MediaComp.jsx";

@@ -1,5 +1,11 @@
+
+
 import { load } from "../../storage";
 
+/**
+ * Creates an authorization header object with the token loaded from storage.
+ * @returns {Object|null} The authorization header object or null if token is not found.
+ */
 export function createAuthHeader() {
   const token = load("token");
   if (!token) {
@@ -13,6 +19,13 @@ export function createAuthHeader() {
   };
 }
 
+/**
+ * Performs an authenticated fetch with the provided URL and options.
+ * @param {string} url - The URL to fetch.
+ * @param {Object} [options={}] - The fetch options.
+ * @returns {Promise<Response>} A promise that resolves to the fetch response.
+ * @throws {Error} If the authentication token is not available or the network response is not ok.
+ */
 export function authFetch(url, options = {}) {
   const headers = createAuthHeader();
   if (!headers) {

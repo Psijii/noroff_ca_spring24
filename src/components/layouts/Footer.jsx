@@ -11,7 +11,7 @@ const Footer = () => {
         <span className="block text-sm text-white sm:text-center">
           © 2024{" "}
           <a
-            href="https://example.com"
+            href="https://spontaneous-lollipop-76b9e4.netlify.app/"
             className="hover:underline"
             aria-label="Holidaze front page"
           >
