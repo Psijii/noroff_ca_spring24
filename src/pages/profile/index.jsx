@@ -1,3 +1,11 @@
+
+
+/**
+ * ProfilePage component displays the profile information for a specific user.
+ * It fetches the profile data using the useSingleProfile hook and renders the profile information.
+ *
+ * @returns {JSX.Element} The rendered ProfilePage component.
+ */
 import useSingleProfile from "../../hooks/useSingleProfile/index.jsx";
 import retrieveProfileName from "../../helper/retrieveProfileName";
 import DisplayProfile from "./displayUserProfile/index.jsx";

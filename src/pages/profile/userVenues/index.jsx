@@ -1,3 +1,9 @@
+
+
+/**
+ * Renders a list of venues created by the user.
+ * @returns {JSX.Element} The rendered UserVenues component.
+ */
 import VenueCardCreatedByHost from "../usersVenue/index.jsx";
 import { useVenues } from "../../../context/useVenues.jsx";
 
